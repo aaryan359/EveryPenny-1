@@ -7,7 +7,7 @@ const app = express();
       try {
 
 
-         const db = await mongoose.connect('process.env.MONGODB_URI')
+         const db = await mongoose.connect(process.env.MONGODB_URI)
 
          console.log("DB Connected");
       } catch (error) {
